@@ -3,13 +3,15 @@ from __future__ import annotations
 import gymnasium as gym
 from tqdm import tqdm
 
-from agent import QlearningAgent
+from truco.agent import QlearningAgent
 
-env = gym.make("TrucoUruguayo-v0")
+gym.pprint_registry()
+
+env = gym.make("truco/TrucoUruguayo-v0")
 
 # hyperparameters
 learning_rate = 0.01
-n_episodes = 100_000
+n_episodes = 100
 start_epsilon = 1.0
 epsilon_decay = start_epsilon / (n_episodes / 2)  # reduce the exploration over time
 final_epsilon = 0.1
@@ -55,4 +57,6 @@ env.close()
 #     obs, reward, done, truncated, info = env.step(action)
 #     env.render()
 
+# env.close()
+# env.close()
 # env.close()
