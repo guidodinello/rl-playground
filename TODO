@@ -1,0 +1,12 @@
+Definir un buen entorno de python.
+
+-   Algun gestor de paquetes:
+    -> Pyenv + Poetry
+    https://www.reddit.com/r/datascience/comments/111djvu/what_do_you_use_to_manage_your_python_packages/
+    -> Pdm
+    https://github.com/pdm-project/pdm
+
+-   Pylint
+-   Mypy
+-   Pytest
+-   Black

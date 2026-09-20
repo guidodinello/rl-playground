@@ -1,0 +1,1 @@
+from truco_uruguayo_gymnasium.envs.truco_uruguayo_env import TrucoUruguayoEnv
